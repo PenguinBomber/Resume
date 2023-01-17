@@ -1,0 +1,34 @@
+//Tag Styles
+html, body
+    //get rid of that nasty default margin
+    margin: 0px
+    padding: 0px
+
+body
+    //center the content in the window
+    display: flex
+    align-items: center
+    justify-content: center
+    //fill the whole display
+    min-height: 100vh
+    width: 100vw
+
+//Class setups
+.container
+    display: grid
+
+//Independant ID setups
+#main
+    grid-template-columns: 20rem 1fr
+    grid-template-rows: 10rem 1fr 10rem
+    grid-column-gap: 0px
+    grid-row-gap: 0px
+
+#header
+    grid-area: 1 / 1 / 2 / 3
+#body
+    grid-area: 2 / 2 / 3 / 3
+#sidebar
+    grid-area: 2 / 1 / 3 / 2
+#footer
+    grid-area: 3 / 1 / 4 / 3
